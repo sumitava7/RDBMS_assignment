@@ -118,5 +118,6 @@ ALTER TABLE jobs
 DROP COLUMN max_salary;
 
 -- [c]
+
 ALTER TABLE locations 
 rename COLUMN postal_code TO pincode;
