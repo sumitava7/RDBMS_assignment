@@ -81,13 +81,13 @@ INSERT INTO countries(country_id,country_name,region_id) VALUES
 (1, 'india',4),(2, 'india',4),(3, 'usa',10),(5, 'bangladesh',11),(10, 'ukrain',12);
 
 INSERT INTO locations(location_id, street_address,postal_code,city,state_province,country_id) VALUES
-(1 , 'road abc','50000','acc','24pgn',1),(2 , 'road 123','90001','dhaka','seoul',10),(3,'a12 road','700110','kuala lampur','khardah',12),
-(4,'road oop','700000','saltlake','l12',4),(5,'road 100','121321','pcc','delhi',10);
+(1 , 'road abc','50000','acc','24pgn',1),(2 , 'road 123','90001','dhaka','seoul',10),(3,'a12 road','700110','kuala lampur','khardah',2),
+(4,'road oop','700000','saltlake','l12',5),(5,'road 100','121321','pcc','delhi',3);
 
-INSERT INTO department(department_id, department_name,location_id) VALUES 
+INSERT INTO departments (department_id, department_name,location_id) VALUES 
 (1, 'finance',2),(2,'quant',2),(4,'hr',5),(6,'supplychain',4),(3,'analyst',1);
 
-INSERT INTO employees(employee_id, first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
+INSERT INTO employee(employee_id, first_name,last_name,email,phone_number,hire_date,job_id,salary,manager_id,department_id) VALUES
 (1,'abc','def','abc@gmail.com','7990999010','2022-10-19',1,20000,null,2),
 (2,'sad','gss','sad@gmial.com','7990999010','2020-04-26',1,69000,null,4),
 (3,'dsasd','PANDIT','dsas@gmail.com','7990922010','2021-05-23',4,30000,null,3),
@@ -101,6 +101,7 @@ INSERT INTO employees(employee_id, first_name,last_name,email,phone_number,hire_
 
 INSERT INTO dependents(dependent_id,first_name,last_name,relationship,employee_id) VALUES 
 (1,'asdsd','cas','brother',6),(3,'oass','sdasd','father',2),(4,'sdall','pqooq','son',1),(6,'asdazs','asdasq','mother',4),(10,'dsadc','asda','daughter',9);
+
 
 
 --In departments table, add a new field 'manager_name' of type VARCHAR
