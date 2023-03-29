@@ -1,3 +1,4 @@
+--using Postgres
 --Q[1]
 
 select department_name from departments 
